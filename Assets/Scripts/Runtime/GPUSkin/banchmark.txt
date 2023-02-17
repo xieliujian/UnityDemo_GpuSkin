@@ -1,0 +1,29 @@
+Vivo X21
+
+Animator
+1560 6.5帧 153ms
+390 25帧   40ms
+
+GPU Skin Vertex     8.5X      1.83X      1.28X
+1560 55帧  18ms
+390 60帧   ~
+ 
+GPU Skin Bone2      4.6X
+1560 33帧  33ms
+390 60帧   ~
+
+GPU Skin Bone1      6.6X
+1560 43帧  23ms
+390 60帧   ~
+
+
+
+Google nexus
+
+GPU Skin Bone1      
+1560 6帧   166ms
+390 23帧   43ms
+
+GPU Skin Vertex     
+1560 9帧  110ms
+390 33帧   33ms
