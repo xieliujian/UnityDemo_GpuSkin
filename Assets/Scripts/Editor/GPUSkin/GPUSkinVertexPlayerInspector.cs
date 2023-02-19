@@ -23,7 +23,7 @@ public class GPUSkinVertexPlayerInspector : Editor
     /// </summary>
     void DrawPlayBtn()
     {
-        if (UIEditorUtils.DrawHeader("Play Animation"))
+        if (EditorUtils.DrawHeader("Play Animation"))
         {
             EditorGUILayout.BeginVertical("Box", GUILayout.MinHeight(10f));
 

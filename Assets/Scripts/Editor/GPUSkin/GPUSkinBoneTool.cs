@@ -18,7 +18,7 @@ public class GPUSkinBoneTool : GPUSkinTool
 
     static string SHADER_NAME
     {
-        get { return "LingRen/GPUSkinBone"; }
+        get { return "Character/GPUSkinBone"; }
     }
 
     #endregion

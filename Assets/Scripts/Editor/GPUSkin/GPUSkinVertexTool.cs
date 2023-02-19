@@ -18,7 +18,7 @@ public class GPUSkinVertexTool : GPUSkinTool
 
     static string SHADER_NAME
     {
-        get { return "LingRen/GPUSkinVertex"; }
+        get { return "Character/GPUSkinVertex"; }
     }
 
     #endregion

@@ -45,7 +45,7 @@ public class GPUSkinEditorUtils
     public static List<Material> GetDirMaterials(string dirAssetPath)
     {
         List<Material> mats = new List<Material>();
-        List<string> objAssetPathList = EditorFileUtils.GetDirSubFilePathList(dirAssetPath + "/mat/", true, "mat");
+        List<string> objAssetPathList = EditorUtils.GetDirSubFilePathList(dirAssetPath + "/mat/", true, "mat");
 
         for (int i = 0; i < objAssetPathList.Count; i++)
         {
@@ -55,7 +55,7 @@ public class GPUSkinEditorUtils
                 continue;
             }
 
-            objAssetPath = EditorFileUtils.GetAssetPathFromFullPath(objAssetPath);
+            objAssetPath = EditorUtils.GetAssetPathFromFullPath(objAssetPath);
             Material mat = AssetDatabase.LoadAssetAtPath<Material>(objAssetPath);
 
             var maintex = mat.GetTexture("_BaseMap");
@@ -75,7 +75,7 @@ public class GPUSkinEditorUtils
     {
         List<AnimationClip> clips = new List<AnimationClip>();
         List<string> objAssetPathList =
-            EditorFileUtils.GetDirSubFilePathList(dirAssetPath + "/animation/", true, "fbx");
+            EditorUtils.GetDirSubFilePathList(dirAssetPath + "/animation/", true, "fbx");
 
         for (int i = 0; i < objAssetPathList.Count; i++)
         {
@@ -85,7 +85,7 @@ public class GPUSkinEditorUtils
                 continue;
             }
 
-            objAssetPath = EditorFileUtils.GetAssetPathFromFullPath(objAssetPath);
+            objAssetPath = EditorUtils.GetAssetPathFromFullPath(objAssetPath);
             Object[] objs = AssetDatabase.LoadAllAssetsAtPath(objAssetPath);
             foreach (Object obj in objs)
             {
@@ -124,13 +124,13 @@ public class GPUSkinEditorUtils
 
     public static void CreateAsset(UnityEngine.Object asset, string path)
     {
-        string dirPath = EditorUtils.AssetsPath2ABSPath(EditorFileUtils.GetDirPath(path));
+        string dirPath = EditorUtils.AssetsPath2ABSPath(EditorUtils.GetDirPath(path));
         if (!Directory.Exists(dirPath))
         {
             Directory.CreateDirectory(dirPath);
         }
         
-        LREditorUtils.SafeRemoveAsset(path);
+        EditorUtils.SafeRemoveAsset(path);
         AssetDatabase.CreateAsset(asset, path);
     }
 
@@ -307,14 +307,14 @@ public class GPUSkinEditorUtils
     /// <param name="dstpath"></param>
     static void ClearPrefabPathAllMat(string dstpath)
     {
-        List<string> objAssetPathList = EditorFileUtils.GetDirSubFilePathList(dstpath, true, "mat");
+        List<string> objAssetPathList = EditorUtils.GetDirSubFilePathList(dstpath, true, "mat");
 
         for (int i = 0; i < objAssetPathList.Count; i++)
         {
             string objAssetPath = objAssetPathList[i];
-            objAssetPath = EditorFileUtils.GetAssetPathFromFullPath(objAssetPath);
+            objAssetPath = EditorUtils.GetAssetPathFromFullPath(objAssetPath);
 
-            LREditorUtils.SafeRemoveAsset(objAssetPath);
+            EditorUtils.SafeRemoveAsset(objAssetPath);
         }
     }
 
@@ -324,14 +324,14 @@ public class GPUSkinEditorUtils
     /// <param name="dstpath"></param>
     static void ClearPrefabPathAllPrefab(string dstpath)
     {
-        List<string> objAssetPathList = EditorFileUtils.GetDirSubFilePathList(dstpath, true, "prefab");
+        List<string> objAssetPathList = EditorUtils.GetDirSubFilePathList(dstpath, true, "prefab");
 
         for (int i = 0; i < objAssetPathList.Count; i++)
         {
             string objAssetPath = objAssetPathList[i];
-            objAssetPath = EditorFileUtils.GetAssetPathFromFullPath(objAssetPath);
+            objAssetPath = EditorUtils.GetAssetPathFromFullPath(objAssetPath);
 
-            LREditorUtils.SafeRemoveAsset(objAssetPath);
+            EditorUtils.SafeRemoveAsset(objAssetPath);
         }
     }
 }
