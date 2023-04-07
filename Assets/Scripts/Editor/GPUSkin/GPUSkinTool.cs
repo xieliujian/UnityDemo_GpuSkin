@@ -5,34 +5,38 @@ using UnityEditor;
 using UnityEditor.Animations;
 using System.IO;
 
-public class GPUSkinTool
+namespace gtm.Scene.GPUSkin
 {
-    #region Defines
-
-    public static string GPU_SKIN_DIR
+    public class GPUSkinTool
     {
-        get { return "/GPUSkin/"; }
-    }
+        #region Defines
 
-    protected static string MESH_NAME
-    {
-        get { return "Mesh.asset"; }
-    }
+        public static string GPU_SKIN_DIR
+        {
+            get { return "/GPUSkin/"; }
+        }
 
-    protected static string TEX_NAME
-    {
-        get { return "Tex.asset"; }
-    }
+        protected static string MESH_NAME
+        {
+            get { return "Mesh.asset"; }
+        }
 
-    protected static string INFO_NAME
-    {
-        get { return "Info.asset"; }
-    }
+        protected static string TEX_NAME
+        {
+            get { return "Tex.asset"; }
+        }
 
-    public static string PREFAB_NAME
-    {
-        get { return "GpuSkin"; }
-    }
+        protected static string INFO_NAME
+        {
+            get { return "Info.asset"; }
+        }
 
-    #endregion
+        public static string PREFAB_NAME
+        {
+            get { return "GpuSkin"; }
+        }
+
+        #endregion
+    }
 }
+

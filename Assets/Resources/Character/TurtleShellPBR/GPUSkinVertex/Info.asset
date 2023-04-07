@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e674186c160a84d82b6c42660cf2fa, type: 3}
+  m_Name: Info
+  m_EditorClassIdentifier: 
+  mesh: {fileID: 4300000, guid: 6d25822c96f9b054f8dbaca0c44176b7, type: 2}
+  infoList:
+  - name: Attack01
+    startPixelIndex: 0
+    totalPixelCount: 22550
+    frameCount: 25
+    frameRate: 30
+    length: 0.8333334
+  - name: Attack02
+    startPixelIndex: 22550
+    totalPixelCount: 22550
+    frameCount: 25
+    frameRate: 30
+    length: 0.8333334
+  - name: DefendGetHit
+    startPixelIndex: 45100
+    totalPixelCount: 6314
+    frameCount: 7
+    frameRate: 30
+    length: 0.23333335
+  - name: Defend
+    startPixelIndex: 51414
+    totalPixelCount: 15334
+    frameCount: 17
+    frameRate: 30
+    length: 0.5666667
+  - name: Die
+    startPixelIndex: 66748
+    totalPixelCount: 54120
+    frameCount: 60
+    frameRate: 30
+    length: 2
+  - name: Dizzy
+    startPixelIndex: 120868
+    totalPixelCount: 36080
+    frameCount: 40
+    frameRate: 30
+    length: 1.3333334
+  - name: GetHit
+    startPixelIndex: 156948
+    totalPixelCount: 22550
+    frameCount: 25
+    frameRate: 30
+    length: 0.8333334
+  - name: IdleBattle
+    startPixelIndex: 179498
+    totalPixelCount: 21648
+    frameCount: 24
+    frameRate: 30
+    length: 0.8000001
+  - name: IdleNormal
+    startPixelIndex: 201146
+    totalPixelCount: 45100
+    frameCount: 50
+    frameRate: 30
+    length: 1.6666667
+  - name: RunFWD
+    startPixelIndex: 246246
+    totalPixelCount: 14432
+    frameCount: 16
+    frameRate: 30
+    length: 0.53333336
+  - name: SenseSomethingRPT
+    startPixelIndex: 260678
+    totalPixelCount: 63140
+    frameCount: 70
+    frameRate: 30
+    length: 2.3333335
+  - name: SenseSomethingST
+    startPixelIndex: 323818
+    totalPixelCount: 54120
+    frameCount: 60
+    frameRate: 30
+    length: 2
+  - name: Taunt
+    startPixelIndex: 377938
+    totalPixelCount: 45100
+    frameCount: 50
+    frameRate: 30
+    length: 1.6666667
+  - name: Victory
+    startPixelIndex: 423038
+    totalPixelCount: 72160
+    frameCount: 80
+    frameRate: 30
+    length: 2.6666667
+  - name: WalkBWD
+    startPixelIndex: 495198
+    totalPixelCount: 27060
+    frameCount: 30
+    frameRate: 30
+    length: 1
+  - name: WalkLeft
+    startPixelIndex: 522258
+    totalPixelCount: 27060
+    frameCount: 30
+    frameRate: 30
+    length: 1
+  - name: WalkRight
+    startPixelIndex: 549318
+    totalPixelCount: 27060
+    frameCount: 30
+    frameRate: 30
+    length: 1
+  - name: WalkFWD
+    startPixelIndex: 576378
+    totalPixelCount: 27060
+    frameCount: 30
+    frameRate: 30
+    length: 1
+  texWidth: 778
+  texHeight: 778
+  texture: {fileID: 2800000, guid: 551279581f512124ca039812857386f9, type: 2}
+  vertexCount: 902
